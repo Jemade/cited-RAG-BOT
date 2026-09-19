@@ -1,0 +1,40 @@
+services:
+  # CiteRAG Backend API
+  - type: web
+    name: citerag-api
+    runtime: python
+    buildCommand: pip install --upgrade pip && pip install torch --index-url https://download.pytorch.org/whl/cpu && pip install -r backend/requirements.txt
+    startCommand: uvicorn app.main:app --app-dir backend --host 0.0.0.0 --port $PORT
+    healthCheckPath: /health
+    plan: free
+    autoDeploy: true
+    envVars:
+      - key: PYTHON_VERSION
+        value: "3.11"
+      - key: LLM_PROVIDER
+        value: auto
+      - key: CONFIDENCE_THRESHOLD
+        value: "-2.5"
+      - key: DATABASE_URL
+        value: sqlite:///./data/citerag.db
+      - key: OPENAI_API_KEY
+        sync: false
+      - key: GEMINI_API_KEY
+        sync: false
+      - key: GROQ_API_KEY
+        sync: false
+
+  # CiteRAG Frontend UI
+  - type: web
+    name: citerag-ui
+    runtime: static
+    buildCommand: cd frontend && npm install && npm run build
+    staticPublishPath: ./frontend/dist
+    routes:
+      - type: rewrite
+        source: /*
+        destination: /index.html
+    autoDeploy: true
+    envVars:
+      - key: NODE_VERSION
+        value: "20.11.0"
