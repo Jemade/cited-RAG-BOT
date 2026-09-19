@@ -1,0 +1,146 @@
+[
+  {
+    "id": "q01",
+    "question": "What optimizer was used for training the Transformer, and what were its hyperparameters?",
+    "answerable": true,
+    "supporting_page": 7,
+    "expected_answer": "The Adam optimizer was used with beta1 = 0.9, beta2 = 0.98, and epsilon = 10^-9.",
+    "acceptable_evidence": "We used the Adam optimizer [20] with β1 = 0.9, β2 = 0.98 and ϵ = 10−9."
+  },
+  {
+    "id": "q02",
+    "question": "How many warmup steps were used in the learning rate schedule during training?",
+    "answerable": true,
+    "supporting_page": 7,
+    "expected_answer": "4000 warmup steps were used.",
+    "acceptable_evidence": "warmup_steps = 4000."
+  },
+  {
+    "id": "q03",
+    "question": "What BLEU score did the big Transformer model achieve on the English-to-German newstest2014 test?",
+    "answerable": true,
+    "supporting_page": 8,
+    "expected_answer": "The big model achieved a BLEU score of 28.4.",
+    "acceptable_evidence": "establishing a new state-of-the-art BLEU score of 28.4."
+  },
+  {
+    "id": "q04",
+    "question": "What hardware was used to train the base model, and how long did each step take?",
+    "answerable": true,
+    "supporting_page": 7,
+    "expected_answer": "8 NVIDIA P100 GPUs were used, and each training step took about 0.4 seconds.",
+    "acceptable_evidence": "one machine with 8 NVIDIA P100 GPUs... each training step took about 0.4 seconds."
+  },
+  {
+    "id": "q05",
+    "question": "What BLEU score did the big model achieve on the English-to-French translation task?",
+    "answerable": true,
+    "supporting_page": 8,
+    "expected_answer": "The big model achieved a BLEU score of 41.0.",
+    "acceptable_evidence": "On the WMT 2014 English-to-French translation task, our big model achieves a BLEU score of 41.0."
+  },
+  {
+    "id": "q06",
+    "question": "What value of label smoothing was employed during training?",
+    "answerable": true,
+    "supporting_page": 8,
+    "expected_answer": "Label smoothing with a value of epsilon_ls = 0.1 was employed.",
+    "acceptable_evidence": "employed label smoothing of value ϵls = 0.1"
+  },
+  {
+    "id": "q07",
+    "question": "How many parallel attention layers or heads are used in multi-head attention in the base model?",
+    "answerable": true,
+    "supporting_page": 5,
+    "expected_answer": "8 parallel attention layers or heads were used.",
+    "acceptable_evidence": "h = 8 parallel attention layers, or heads."
+  },
+  {
+    "id": "q08",
+    "question": "What is the dimension d_model of the positional encodings and embeddings?",
+    "answerable": true,
+    "supporting_page": 6,
+    "expected_answer": "The positional encodings have dimension d_model = 512.",
+    "acceptable_evidence": "positional encodings have the same dimension dmodel = 512"
+  },
+  {
+    "id": "q09",
+    "question": "What mathematical functions are used for the sinusoidal positional encoding?",
+    "answerable": true,
+    "supporting_page": 6,
+    "expected_answer": "Sine and cosine functions of different frequencies are used.",
+    "acceptable_evidence": "we use sine and cosine functions of different frequencies"
+  },
+  {
+    "id": "q10",
+    "question": "What residual dropout rate was used during training for the base model?",
+    "answerable": true,
+    "supporting_page": 8,
+    "expected_answer": "A dropout rate of P_drop = 0.1 was used.",
+    "acceptable_evidence": "dropout rate Pdrop = 0.1"
+  },
+  {
+    "id": "q11",
+    "question": "How many encoder and decoder layers N are stacked in the Transformer architecture?",
+    "answerable": true,
+    "supporting_page": 3,
+    "expected_answer": "A stack of N = 6 identical layers is used for both encoder and decoder.",
+    "acceptable_evidence": "composed of a stack of N = 6 identical layers."
+  },
+  {
+    "id": "q12",
+    "question": "What are the two sub-layers in each encoder layer?",
+    "answerable": true,
+    "supporting_page": 3,
+    "expected_answer": "The first is a multi-head self-attention mechanism, and the second is a position-wise fully connected feed-forward network.",
+    "acceptable_evidence": "The first is a multi-head self-attention mechanism, and the second is a simple, position-wise fully connected feed-forward network."
+  },
+  {
+    "id": "q13",
+    "question": "What does the decoder stack insert between its two sub-layers?",
+    "answerable": true,
+    "supporting_page": 3,
+    "expected_answer": "A third sub-layer which performs multi-head attention over the output of the encoder stack.",
+    "acceptable_evidence": "the decoder inserts a third sub-layer, which performs multi-head attention over the output of the encoder stack."
+  },
+  {
+    "id": "q14",
+    "question": "What is the inner-layer dimensionality d_ff of the feed-forward network in the base model?",
+    "answerable": true,
+    "supporting_page": 5,
+    "expected_answer": "The inner-layer dimensionality is d_ff = 2048.",
+    "acceptable_evidence": "inner-layer has dimensionality dff = 2048."
+  },
+  {
+    "id": "q15",
+    "question": "What was the total dollar training cost of GPT-4 in cloud compute?",
+    "answerable": false,
+    "supporting_page": null,
+    "expected_answer": "I don't know based on the documents available. No sufficiently relevant source was found.",
+    "acceptable_evidence": null
+  },
+  {
+    "id": "q16",
+    "question": "What is the recommended adult dosage of ibuprofen for acute pain relief?",
+    "answerable": false,
+    "supporting_page": null,
+    "expected_answer": "I don't know based on the documents available. No sufficiently relevant source was found.",
+    "acceptable_evidence": null
+  },
+  {
+    "id": "q17",
+    "question": "How does the Transformer implement convolutional kernels of size k=7?",
+    "answerable": false,
+    "supporting_page": null,
+    "expected_answer": "I don't know based on the documents available. No sufficiently relevant source was found.",
+    "acceptable_evidence": null
+  },
+  {
+    "id": "q18",
+    "question": "What was the quarterly revenue of Alphabet Inc in Q4 2023?",
+    "answerable": false,
+    "supporting_page": null,
+    "expected_answer": "I don't know based on the documents available. No sufficiently relevant source was found.",
+    "acceptable_evidence": null
+  }
+]

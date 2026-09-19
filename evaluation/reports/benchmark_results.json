@@ -1,0 +1,2053 @@
+{
+  "vector": {
+    "mode": "vector",
+    "total_queries": 18,
+    "hit_rate_at_5": 0.5,
+    "mrr_at_5": 0.3381,
+    "correct_refusal_rate": 0.75,
+    "false_refusal_rate": 0.5714,
+    "citation_precision": 0.4286,
+    "total_citations_generated": 7,
+    "avg_latency_ms": 6.49,
+    "queries": [
+      {
+        "id": "q01",
+        "question": "What optimizer was used for training the Transformer, and what were its hyperparameters?",
+        "answerable": true,
+        "ground_truth_page": 7,
+        "retrieved_pages": [
+          10,
+          10,
+          4,
+          8,
+          7
+        ],
+        "is_hit": true,
+        "reciprocal_rank": 0.2,
+        "refused": false,
+        "confidence_score": 0.3086,
+        "latency_ms": 8.64,
+        "answer": "6.2\nModel Variations\n\nTo evaluate the importance of different components of the Transformer, we varied our base model\nin different ways, measuring the change in performance on English-to-German translation on the\n\n5We used values of 2.8, 3.7, 6.0 and 9.5 TFLOPS for K80, K40, M40 and P100, respectively. [Page 8]",
+        "citations": [
+          {
+            "document_id": "eval-attention-doc-001",
+            "page_number": 8,
+            "chunk_id": "eval-attention-doc-001_p8_c30",
+            "citation_marker": "[Page 8]",
+            "snippet": "erations used to train a\nmodel by multiplying the training time, the number of GPUs used, and an estimate of the sustained\nsingle-precision floating-point capacity of each GPU 5.",
+            "validated": true,
+            "match_score": 0.0,
+            "warning": null
+          }
+        ]
+      },
+      {
+        "id": "q02",
+        "question": "How many warmup steps were used in the learning rate schedule during training?",
+        "answerable": true,
+        "ground_truth_page": 7,
+        "retrieved_pages": [
+          11,
+          3,
+          1,
+          6,
+          2
+        ],
+        "is_hit": false,
+        "reciprocal_rank": 0.0,
+        "refused": true,
+        "confidence_score": 0.258,
+        "latency_ms": 9.99,
+        "answer": "I don't know based on the documents available. The provided document sources do not contain sufficient evidence to answer this question.",
+        "citations": []
+      },
+      {
+        "id": "q03",
+        "question": "What BLEU score did the big Transformer model achieve on the English-to-German newstest2014 test?",
+        "answerable": true,
+        "ground_truth_page": 8,
+        "retrieved_pages": [
+          3,
+          2,
+          4,
+          6,
+          9
+        ],
+        "is_hit": false,
+        "reciprocal_rank": 0.0,
+        "refused": true,
+        "confidence_score": 0.4394,
+        "latency_ms": 5.88,
+        "answer": "I don't know based on the documents available. The provided document sources do not contain sufficient evidence to answer this question.",
+        "citations": []
+      },
+      {
+        "id": "q04",
+        "question": "What hardware was used to train the base model, and how long did each step take?",
+        "answerable": true,
+        "ground_truth_page": 7,
+        "retrieved_pages": [
+          13,
+          5,
+          6,
+          1,
+          4
+        ],
+        "is_hit": false,
+        "reciprocal_rank": 0.0,
+        "refused": true,
+        "confidence_score": 0.4198,
+        "latency_ms": 6.78,
+        "answer": "I don't know based on the documents available. The provided document sources do not contain sufficient evidence to answer this question.",
+        "citations": []
+      },
+      {
+        "id": "q05",
+        "question": "What BLEU score did the big model achieve on the English-to-French translation task?",
+        "answerable": true,
+        "ground_truth_page": 8,
+        "retrieved_pages": [
+          8,
+          2,
+          1,
+          9,
+          14
+        ],
+        "is_hit": true,
+        "reciprocal_rank": 1.0,
+        "refused": false,
+        "confidence_score": 0.3996,
+        "latency_ms": 6.08,
+        "answer": "On the WMT 2014 English-to-French translation task, our big model achieves a BLEU score of 41.0,\noutperforming all of the previously published single models, at less than 1/4 the training cost of the\nprevious state-of-the-art model. [Page 8]",
+        "citations": [
+          {
+            "document_id": "eval-attention-doc-001",
+            "page_number": 8,
+            "chunk_id": "eval-attention-doc-001_p8_c28",
+            "citation_marker": "[Page 8]",
+            "snippet": "Pdrop = 0.1.",
+            "validated": true,
+            "match_score": 0.0,
+            "warning": null
+          }
+        ]
+      },
+      {
+        "id": "q06",
+        "question": "What value of label smoothing was employed during training?",
+        "answerable": true,
+        "ground_truth_page": 8,
+        "retrieved_pages": [
+          7,
+          1,
+          8,
+          2,
+          12
+        ],
+        "is_hit": true,
+        "reciprocal_rank": 0.3333,
+        "refused": true,
+        "confidence_score": 0.3279,
+        "latency_ms": 5.69,
+        "answer": "I don't know based on the documents available. The provided document sources do not contain sufficient evidence to answer this question.",
+        "citations": []
+      },
+      {
+        "id": "q07",
+        "question": "How many parallel attention layers or heads are used in multi-head attention in the base model?",
+        "answerable": true,
+        "ground_truth_page": 5,
+        "retrieved_pages": [
+          10,
+          8,
+          9,
+          10,
+          12
+        ],
+        "is_hit": false,
+        "reciprocal_rank": 0.0,
+        "refused": true,
+        "confidence_score": 0.2796,
+        "latency_ms": 5.28,
+        "answer": "I don't know based on the documents available. The provided document sources do not contain sufficient evidence to answer this question.",
+        "citations": []
+      },
+      {
+        "id": "q08",
+        "question": "What is the dimension d_model of the positional encodings and embeddings?",
+        "answerable": true,
+        "ground_truth_page": 6,
+        "retrieved_pages": [
+          6,
+          12,
+          2,
+          9,
+          10
+        ],
+        "is_hit": true,
+        "reciprocal_rank": 1.0,
+        "refused": false,
+        "confidence_score": 0.4631,
+        "latency_ms": 9.5,
+        "answer": "To this end, we add \"positional encodings\" to the input embeddings at the\nbottoms of the encoder and decoder stacks. [Page 6]",
+        "citations": [
+          {
+            "document_id": "eval-attention-doc-001",
+            "page_number": 6,
+            "chunk_id": "eval-attention-doc-001_p6_c18",
+            "citation_marker": "[Page 6]",
+            "snippet": "Table 1: Maximum path lengths, per-layer complexity and minimum number of sequential operations\nfor different layer types.",
+            "validated": true,
+            "match_score": 0.0,
+            "warning": null
+          }
+        ]
+      },
+      {
+        "id": "q09",
+        "question": "What mathematical functions are used for the sinusoidal positional encoding?",
+        "answerable": true,
+        "ground_truth_page": 6,
+        "retrieved_pages": [
+          11,
+          12,
+          15,
+          2,
+          10
+        ],
+        "is_hit": false,
+        "reciprocal_rank": 0.0,
+        "refused": true,
+        "confidence_score": 0.3204,
+        "latency_ms": 5.6,
+        "answer": "I don't know based on the documents available. The provided document sources do not contain sufficient evidence to answer this question.",
+        "citations": []
+      },
+      {
+        "id": "q10",
+        "question": "What residual dropout rate was used during training for the base model?",
+        "answerable": true,
+        "ground_truth_page": 8,
+        "retrieved_pages": [
+          11,
+          2,
+          5,
+          1,
+          3
+        ],
+        "is_hit": false,
+        "reciprocal_rank": 0.0,
+        "refused": true,
+        "confidence_score": 0.3765,
+        "latency_ms": 6.16,
+        "answer": "I don't know based on the documents available. The provided document sources do not contain sufficient evidence to answer this question.",
+        "citations": []
+      },
+      {
+        "id": "q11",
+        "question": "How many encoder and decoder layers N are stacked in the Transformer architecture?",
+        "answerable": true,
+        "ground_truth_page": 3,
+        "retrieved_pages": [
+          3,
+          9,
+          5,
+          8,
+          6
+        ],
+        "is_hit": true,
+        "reciprocal_rank": 1.0,
+        "refused": false,
+        "confidence_score": 0.3599,
+        "latency_ms": 6.57,
+        "answer": "3.3\nPosition-wise Feed-Forward Networks\n\nIn addition to attention sub-layers, each of the layers in our encoder and decoder contains a fully\nconnected feed-forward network, which is applied to each position separately and identically. [Page 5]",
+        "citations": [
+          {
+            "document_id": "eval-attention-doc-001",
+            "page_number": 5,
+            "chunk_id": "eval-attention-doc-001_p5_c16",
+            "citation_marker": "[Page 5]",
+            "snippet": "lues\nand queries come from the same place, in this case, the output of the previous layer in the\nencoder.",
+            "validated": true,
+            "match_score": 0.0,
+            "warning": null
+          }
+        ]
+      },
+      {
+        "id": "q12",
+        "question": "What are the two sub-layers in each encoder layer?",
+        "answerable": true,
+        "ground_truth_page": 3,
+        "retrieved_pages": [
+          12,
+          10,
+          6,
+          7,
+          2
+        ],
+        "is_hit": false,
+        "reciprocal_rank": 0.0,
+        "refused": true,
+        "confidence_score": 0.3837,
+        "latency_ms": 5.79,
+        "answer": "I don't know based on the documents available. The provided document sources do not contain sufficient evidence to answer this question.",
+        "citations": []
+      },
+      {
+        "id": "q13",
+        "question": "What does the decoder stack insert between its two sub-layers?",
+        "answerable": true,
+        "ground_truth_page": 3,
+        "retrieved_pages": [
+          3,
+          6,
+          15,
+          2,
+          5
+        ],
+        "is_hit": true,
+        "reciprocal_rank": 1.0,
+        "refused": false,
+        "confidence_score": 0.447,
+        "latency_ms": 4.61,
+        "answer": "3.1\nEncoder and Decoder Stacks\n\nEncoder:\nThe encoder is composed of a stack of N = 6 identical layers. [Page 3]",
+        "citations": [
+          {
+            "document_id": "eval-attention-doc-001",
+            "page_number": 3,
+            "chunk_id": "eval-attention-doc-001_p3_c9",
+            "citation_marker": "[Page 3]",
+            "snippet": "Figure 1: The Transformer - model architecture.",
+            "validated": true,
+            "match_score": 0.0,
+            "warning": null
+          }
+        ]
+      },
+      {
+        "id": "q14",
+        "question": "What is the inner-layer dimensionality d_ff of the feed-forward network in the base model?",
+        "answerable": true,
+        "ground_truth_page": 5,
+        "retrieved_pages": [
+          14,
+          6,
+          4,
+          15,
+          5
+        ],
+        "is_hit": true,
+        "reciprocal_rank": 0.2,
+        "refused": false,
+        "confidence_score": 0.409,
+        "latency_ms": 6.4,
+        "answer": "Additive attention computes the compatibility function using a feed-forward network with\na single hidden layer. [Page 4]",
+        "citations": [
+          {
+            "document_id": "eval-attention-doc-001",
+            "page_number": 4,
+            "chunk_id": "eval-attention-doc-001_p4_c12",
+            "citation_marker": "[Page 4]",
+            "snippet": "multaneously, packed together\ninto a matrix Q.",
+            "validated": true,
+            "match_score": 0.0,
+            "warning": null
+          }
+        ]
+      },
+      {
+        "id": "q15",
+        "question": "What was the total dollar training cost of GPT-4 in cloud compute?",
+        "answerable": false,
+        "ground_truth_page": null,
+        "retrieved_pages": [
+          5,
+          9,
+          15,
+          14,
+          12
+        ],
+        "is_hit": false,
+        "reciprocal_rank": 0.0,
+        "refused": true,
+        "confidence_score": 0.4834,
+        "latency_ms": 6.05,
+        "answer": "I don't know based on the documents available. The provided document sources do not contain sufficient evidence to answer this question.",
+        "citations": []
+      },
+      {
+        "id": "q16",
+        "question": "What is the recommended adult dosage of ibuprofen for acute pain relief?",
+        "answerable": false,
+        "ground_truth_page": null,
+        "retrieved_pages": [
+          8,
+          1,
+          4,
+          10,
+          2
+        ],
+        "is_hit": false,
+        "reciprocal_rank": 0.0,
+        "refused": true,
+        "confidence_score": 0.4476,
+        "latency_ms": 6.01,
+        "answer": "I don't know based on the documents available. The provided document sources do not contain sufficient evidence to answer this question.",
+        "citations": []
+      },
+      {
+        "id": "q17",
+        "question": "How does the Transformer implement convolutional kernels of size k=7?",
+        "answerable": false,
+        "ground_truth_page": null,
+        "retrieved_pages": [
+          2,
+          12,
+          7,
+          2,
+          12
+        ],
+        "is_hit": false,
+        "reciprocal_rank": 0.0,
+        "refused": false,
+        "confidence_score": 0.3617,
+        "latency_ms": 6.32,
+        "answer": "Doing so requires a stack of O(n/k) convolutional layers in the case of contiguous kernels,\nor O(logk(n)) in the case of dilated convolutions , increasing the length of the longest paths\nbetween any two positions in the network. [Page 7]",
+        "citations": [
+          {
+            "document_id": "eval-attention-doc-001",
+            "page_number": 7,
+            "chunk_id": "eval-attention-doc-001_p7_c23",
+            "citation_marker": "[Page 7]",
+            "snippet": "hood of size r in\nthe input sequence centered around the respective output position.",
+            "validated": true,
+            "match_score": 0.0,
+            "warning": null
+          }
+        ]
+      },
+      {
+        "id": "q18",
+        "question": "What was the quarterly revenue of Alphabet Inc in Q4 2023?",
+        "answerable": false,
+        "ground_truth_page": null,
+        "retrieved_pages": [
+          4,
+          10,
+          1,
+          11,
+          2
+        ],
+        "is_hit": false,
+        "reciprocal_rank": 0.0,
+        "refused": true,
+        "confidence_score": 0.3433,
+        "latency_ms": 5.49,
+        "answer": "I don't know based on the documents available. The provided document sources do not contain sufficient evidence to answer this question.",
+        "citations": []
+      }
+    ]
+  },
+  "bm25": {
+    "mode": "bm25",
+    "total_queries": 18,
+    "hit_rate_at_5": 1.0,
+    "mrr_at_5": 0.9643,
+    "correct_refusal_rate": 0.75,
+    "false_refusal_rate": 0.0714,
+    "citation_precision": 0.7333,
+    "total_citations_generated": 15,
+    "avg_latency_ms": 5.51,
+    "queries": [
+      {
+        "id": "q01",
+        "question": "What optimizer was used for training the Transformer, and what were its hyperparameters?",
+        "answerable": true,
+        "ground_truth_page": 7,
+        "retrieved_pages": [
+          7,
+          14,
+          15,
+          8,
+          7
+        ],
+        "is_hit": true,
+        "reciprocal_rank": 1.0,
+        "refused": true,
+        "confidence_score": 19.0,
+        "latency_ms": 15.91,
+        "answer": "I don't know based on the documents available. The provided document sources do not contain sufficient evidence to answer this question.",
+        "citations": []
+      },
+      {
+        "id": "q02",
+        "question": "How many warmup steps were used in the learning rate schedule during training?",
+        "answerable": true,
+        "ground_truth_page": 7,
+        "retrieved_pages": [
+          7,
+          8,
+          7,
+          8,
+          8
+        ],
+        "is_hit": true,
+        "reciprocal_rank": 1.0,
+        "refused": false,
+        "confidence_score": 19.1564,
+        "latency_ms": 5.4,
+        "answer": "We varied the learning\nrate over the course of training, according to the formula:\n\nlrate = d\u22120.5\n\nmodel \u00b7 min(step_num\u22120.5, step_num \u00b7 warmup_steps\u22121.5)\n(3)\n\nThis corresponds to increasing the learning rate linearly for the first warmup_steps training steps,\nand decreasing it thereafter proportionally to the inverse square root of the step number. [Page 7]",
+        "citations": [
+          {
+            "document_id": "eval-attention-doc-001",
+            "page_number": 7,
+            "chunk_id": "eval-attention-doc-001_p7_c26",
+            "citation_marker": "[Page 7]",
+            "snippet": "batched together by approximate sequence length.",
+            "validated": true,
+            "match_score": 0.0,
+            "warning": null
+          }
+        ]
+      },
+      {
+        "id": "q03",
+        "question": "What BLEU score did the big Transformer model achieve on the English-to-German newstest2014 test?",
+        "answerable": true,
+        "ground_truth_page": 8,
+        "retrieved_pages": [
+          8,
+          8,
+          1,
+          10,
+          9
+        ],
+        "is_hit": true,
+        "reciprocal_rank": 1.0,
+        "refused": false,
+        "confidence_score": 18.7388,
+        "latency_ms": 6.13,
+        "answer": "6\nResults\n\n6.1\nMachine Translation\n\nOn the WMT 2014 English-to-German translation task, the big transformer model (Transformer (big)\nin Table 2) outperforms the best previously reported models (including ensembles) by more than 2.0\nBLEU, establishing a new state-of-the-art BLEU score of 28.4. [Page 8]",
+        "citations": [
+          {
+            "document_id": "eval-attention-doc-001",
+            "page_number": 8,
+            "chunk_id": "eval-attention-doc-001_p8_c28",
+            "citation_marker": "[Page 8]",
+            "snippet": "Pdrop = 0.1.",
+            "validated": true,
+            "match_score": 0.0,
+            "warning": null
+          }
+        ]
+      },
+      {
+        "id": "q04",
+        "question": "What hardware was used to train the base model, and how long did each step take?",
+        "answerable": true,
+        "ground_truth_page": 7,
+        "retrieved_pages": [
+          7,
+          8,
+          8,
+          1,
+          2
+        ],
+        "is_hit": true,
+        "reciprocal_rank": 1.0,
+        "refused": false,
+        "confidence_score": 18.6666,
+        "latency_ms": 5.63,
+        "answer": "erations used to train a\nmodel by multiplying the training time, the number of GPUs used, and an estimate of the sustained\nsingle-precision floating-point capacity of each GPU 5. [Page 8]",
+        "citations": [
+          {
+            "document_id": "eval-attention-doc-001",
+            "page_number": 8,
+            "chunk_id": "eval-attention-doc-001_p8_c30",
+            "citation_marker": "[Page 8]",
+            "snippet": "erations used to train a\nmodel by multiplying the training time, the number of GPUs used, and an estimate of the sustained\nsingle-precision floating-point capacity of each GPU 5.",
+            "validated": true,
+            "match_score": 0.0,
+            "warning": null
+          }
+        ]
+      },
+      {
+        "id": "q05",
+        "question": "What BLEU score did the big model achieve on the English-to-French translation task?",
+        "answerable": true,
+        "ground_truth_page": 8,
+        "retrieved_pages": [
+          8,
+          1,
+          8,
+          10,
+          10
+        ],
+        "is_hit": true,
+        "reciprocal_rank": 1.0,
+        "refused": false,
+        "confidence_score": 22.5454,
+        "latency_ms": 3.58,
+        "answer": "On the WMT 2014 English-to-French translation task, our big model achieves a BLEU score of 41.0,\noutperforming all of the previously published single models, at less than 1/4 the training cost of the\nprevious state-of-the-art model. [Page 8]",
+        "citations": [
+          {
+            "document_id": "eval-attention-doc-001",
+            "page_number": 8,
+            "chunk_id": "eval-attention-doc-001_p8_c28",
+            "citation_marker": "[Page 8]",
+            "snippet": "Pdrop = 0.1.",
+            "validated": true,
+            "match_score": 0.0,
+            "warning": null
+          }
+        ]
+      },
+      {
+        "id": "q06",
+        "question": "What value of label smoothing was employed during training?",
+        "answerable": true,
+        "ground_truth_page": 8,
+        "retrieved_pages": [
+          8,
+          8,
+          7,
+          15,
+          14
+        ],
+        "is_hit": true,
+        "reciprocal_rank": 1.0,
+        "refused": false,
+        "confidence_score": 17.5009,
+        "latency_ms": 6.13,
+        "answer": "Label Smoothing\nDuring training, we employed label smoothing of value \u03f5ls = 0.1 . [Page 8]",
+        "citations": [
+          {
+            "document_id": "eval-attention-doc-001",
+            "page_number": 8,
+            "chunk_id": "eval-attention-doc-001_p8_c28",
+            "citation_marker": "[Page 8]",
+            "snippet": "Pdrop = 0.1.",
+            "validated": true,
+            "match_score": 0.0,
+            "warning": null
+          }
+        ]
+      },
+      {
+        "id": "q07",
+        "question": "How many parallel attention layers or heads are used in multi-head attention in the base model?",
+        "answerable": true,
+        "ground_truth_page": 5,
+        "retrieved_pages": [
+          5,
+          9,
+          13,
+          15,
+          4
+        ],
+        "is_hit": true,
+        "reciprocal_rank": 1.0,
+        "refused": false,
+        "confidence_score": 14.1055,
+        "latency_ms": 3.94,
+        "answer": "Multi-head attention allows the model to jointly attend to information from different representation\nsubspaces at different positions. [Page 5]",
+        "citations": [
+          {
+            "document_id": "eval-attention-doc-001",
+            "page_number": 5,
+            "chunk_id": "eval-attention-doc-001_p5_c14",
+            "citation_marker": "[Page 5]",
+            "snippet": "output values.",
+            "validated": true,
+            "match_score": 0.0,
+            "warning": null
+          }
+        ]
+      },
+      {
+        "id": "q08",
+        "question": "What is the dimension d_model of the positional encodings and embeddings?",
+        "answerable": true,
+        "ground_truth_page": 6,
+        "retrieved_pages": [
+          6,
+          6,
+          8,
+          5,
+          14
+        ],
+        "is_hit": true,
+        "reciprocal_rank": 1.0,
+        "refused": false,
+        "confidence_score": 19.0104,
+        "latency_ms": 3.54,
+        "answer": "To this end, we add \"positional encodings\" to the input embeddings at the\nbottoms of the encoder and decoder stacks. [Page 6]",
+        "citations": [
+          {
+            "document_id": "eval-attention-doc-001",
+            "page_number": 6,
+            "chunk_id": "eval-attention-doc-001_p6_c18",
+            "citation_marker": "[Page 6]",
+            "snippet": "Table 1: Maximum path lengths, per-layer complexity and minimum number of sequential operations\nfor different layer types.",
+            "validated": true,
+            "match_score": 0.0,
+            "warning": null
+          }
+        ]
+      },
+      {
+        "id": "q09",
+        "question": "What mathematical functions are used for the sinusoidal positional encoding?",
+        "answerable": true,
+        "ground_truth_page": 6,
+        "retrieved_pages": [
+          6,
+          9,
+          6,
+          14,
+          9
+        ],
+        "is_hit": true,
+        "reciprocal_rank": 1.0,
+        "refused": false,
+        "confidence_score": 12.3312,
+        "latency_ms": 6.26,
+        "answer": "In row (E) we replace our\nsinusoidal positional encoding with learned positional embeddings [Page 9], and observe nearly identical\nresults to the base model. [Page 9]",
+        "citations": [
+          {
+            "document_id": "eval-attention-doc-001",
+            "page_number": 9,
+            "chunk_id": "eval-attention-doc-001_p9_c33",
+            "citation_marker": "[Page 9]",
+            "snippet": "In row (E) we replace our\nsinusoidal positional encoding with learned positional embeddings [9], and observe nearly identical\nresults to the base model.",
+            "validated": true,
+            "match_score": 1.0,
+            "warning": null
+          }
+        ]
+      },
+      {
+        "id": "q10",
+        "question": "What residual dropout rate was used during training for the base model?",
+        "answerable": true,
+        "ground_truth_page": 8,
+        "retrieved_pages": [
+          7,
+          8,
+          8,
+          9,
+          8
+        ],
+        "is_hit": true,
+        "reciprocal_rank": 0.5,
+        "refused": false,
+        "confidence_score": 15.3626,
+        "latency_ms": 7.56,
+        "answer": "Model\n\nBLEU\nTraining Cost (FLOPs)\n\nEN-DE\nEN-FR\nEN-DE\nEN-FR\nByteNet \n23.75\nDeep-Att + PosUnk \n39.2\n1.0 \u00b7 1020\n\nGNMT + RL \n24.6\n39.92\n2.3 \u00b7 1019\n1.4 \u00b7 1020\n\nConvS2S [Page 9]\n25.16\n40.46\n9.6 \u00b7 1018\n1.5 \u00b7 1020\n\nMoE \n26.03\n40.56\n2.0 \u00b7 1019\n1.2 \u00b7 1020\n\nDeep-Att + PosUnk Ensemble \n40.4\n8.0 \u00b7 1020\n\nGNMT + RL Ensemble \n26.30\n41.16\n1.8 \u00b7 1020\n1.1 \u00b7 1021\n\nConvS2S Ensemble [Page 9]\n26.36\n41.29\n7.7 \u00b7 1019\n1.2 \u00b7 1021\n\nTransformer (base model)\n27.3\n38.1\n3.3 \u00b7 1018\n\nTransformer (big)\n28.4\n41.8\n2.3 \u00b7 1019\n\nResidual Dropout\nWe apply dropout  to the output of each sub-layer, before it is added to the\nsub-layer input and normalized. [Page 8]",
+        "citations": [
+          {
+            "document_id": "eval-attention-doc-001",
+            "page_number": 9,
+            "chunk_id": "eval-attention-doc-001_p9_c34",
+            "citation_marker": "[Page 9]",
+            "snippet": "We performed only a small number of experiments to select the dropout, both attention and residual\n(section 5.4), learning rates and beam size on the Section 22 development set, all other parameters\nremained unchanged from the English-to-German base ...",
+            "validated": true,
+            "match_score": 0.1818,
+            "warning": null
+          },
+          {
+            "document_id": "eval-attention-doc-001",
+            "page_number": 8,
+            "chunk_id": "eval-attention-doc-001_p8_c27",
+            "citation_marker": "[Page 8]",
+            "snippet": "Table 2: The Transformer achieves better BLEU scores than previous state-of-the-art models on the\nEnglish-to-German and English-to-French newstest2014 tests at a fraction of the training cost.",
+            "validated": true,
+            "match_score": 0.0,
+            "warning": null
+          }
+        ]
+      },
+      {
+        "id": "q11",
+        "question": "How many encoder and decoder layers N are stacked in the Transformer architecture?",
+        "answerable": true,
+        "ground_truth_page": 3,
+        "retrieved_pages": [
+          3,
+          3,
+          5,
+          5,
+          1
+        ],
+        "is_hit": true,
+        "reciprocal_rank": 1.0,
+        "refused": false,
+        "confidence_score": 18.4552,
+        "latency_ms": 5.45,
+        "answer": "The Transformer follows this overall architecture using stacked self-attention and point-wise, fully\nconnected layers for both the encoder and decoder, shown in the left and right halves of Figure 1,\nrespectively. [Page 3]",
+        "citations": [
+          {
+            "document_id": "eval-attention-doc-001",
+            "page_number": 3,
+            "chunk_id": "eval-attention-doc-001_p3_c9",
+            "citation_marker": "[Page 3]",
+            "snippet": "Figure 1: The Transformer - model architecture.",
+            "validated": true,
+            "match_score": 0.0,
+            "warning": null
+          }
+        ]
+      },
+      {
+        "id": "q12",
+        "question": "What are the two sub-layers in each encoder layer?",
+        "answerable": true,
+        "ground_truth_page": 3,
+        "retrieved_pages": [
+          3,
+          15,
+          3,
+          5,
+          14
+        ],
+        "is_hit": true,
+        "reciprocal_rank": 1.0,
+        "refused": false,
+        "confidence_score": 13.2576,
+        "latency_ms": 3.56,
+        "answer": "In addition to the two\nsub-layers in each encoder layer, the decoder inserts a third sub-layer, which performs multi-head\nattention over the output of the encoder stack. [Page 3]",
+        "citations": [
+          {
+            "document_id": "eval-attention-doc-001",
+            "page_number": 3,
+            "chunk_id": "eval-attention-doc-001_p3_c9",
+            "citation_marker": "[Page 3]",
+            "snippet": "Figure 1: The Transformer - model architecture.",
+            "validated": true,
+            "match_score": 0.0,
+            "warning": null
+          }
+        ]
+      },
+      {
+        "id": "q13",
+        "question": "What does the decoder stack insert between its two sub-layers?",
+        "answerable": true,
+        "ground_truth_page": 3,
+        "retrieved_pages": [
+          3,
+          15,
+          14,
+          3,
+          7
+        ],
+        "is_hit": true,
+        "reciprocal_rank": 1.0,
+        "refused": false,
+        "confidence_score": 13.1173,
+        "latency_ms": 4.72,
+        "answer": "In addition to the two\nsub-layers in each encoder layer, the decoder inserts a third sub-layer, which performs multi-head\nattention over the output of the encoder stack. [Page 3]",
+        "citations": [
+          {
+            "document_id": "eval-attention-doc-001",
+            "page_number": 3,
+            "chunk_id": "eval-attention-doc-001_p3_c10",
+            "citation_marker": "[Page 3]",
+            "snippet": "is the function implemented by the sub-layer\nitself.",
+            "validated": true,
+            "match_score": 0.0,
+            "warning": null
+          }
+        ]
+      },
+      {
+        "id": "q14",
+        "question": "What is the inner-layer dimensionality d_ff of the feed-forward network in the base model?",
+        "answerable": true,
+        "ground_truth_page": 5,
+        "retrieved_pages": [
+          5,
+          15,
+          14,
+          3,
+          5
+        ],
+        "is_hit": true,
+        "reciprocal_rank": 1.0,
+        "refused": false,
+        "confidence_score": 18.8299,
+        "latency_ms": 4.3,
+        "answer": "The dimensionality of input and output is dmodel = 512, and the inner-layer has dimensionality\ndff = 2048. [Page 5]",
+        "citations": [
+          {
+            "document_id": "eval-attention-doc-001",
+            "page_number": 5,
+            "chunk_id": "eval-attention-doc-001_p5_c17",
+            "citation_marker": "[Page 5]",
+            "snippet": "feed-forward network, which is applied to each position separately and identically.",
+            "validated": true,
+            "match_score": 0.0,
+            "warning": null
+          }
+        ]
+      },
+      {
+        "id": "q15",
+        "question": "What was the total dollar training cost of GPT-4 in cloud compute?",
+        "answerable": false,
+        "ground_truth_page": null,
+        "retrieved_pages": [
+          15,
+          2,
+          7,
+          14,
+          4
+        ],
+        "is_hit": false,
+        "reciprocal_rank": 0.0,
+        "refused": true,
+        "confidence_score": 9.6491,
+        "latency_ms": 5.94,
+        "answer": "I don't know based on the documents available. The provided document sources do not contain sufficient evidence to answer this question.",
+        "citations": []
+      },
+      {
+        "id": "q16",
+        "question": "What is the recommended adult dosage of ibuprofen for acute pain relief?",
+        "answerable": false,
+        "ground_truth_page": null,
+        "retrieved_pages": [
+          14,
+          15,
+          3,
+          6,
+          4
+        ],
+        "is_hit": false,
+        "reciprocal_rank": 0.0,
+        "refused": true,
+        "confidence_score": 10.2851,
+        "latency_ms": 3.54,
+        "answer": "I don't know based on the documents available. The provided document sources do not contain sufficient evidence to answer this question.",
+        "citations": []
+      },
+      {
+        "id": "q17",
+        "question": "How does the Transformer implement convolutional kernels of size k=7?",
+        "answerable": false,
+        "ground_truth_page": null,
+        "retrieved_pages": [
+          7,
+          6,
+          10,
+          5,
+          5
+        ],
+        "is_hit": false,
+        "reciprocal_rank": 0.0,
+        "refused": false,
+        "confidence_score": 17.9306,
+        "latency_ms": 3.87,
+        "answer": "Doing so requires a stack of O(n/k) convolutional layers in the case of contiguous kernels,\nor O(logk(n)) in the case of dilated convolutions , increasing the length of the longest paths\nbetween any two positions in the network. [Page 7]",
+        "citations": [
+          {
+            "document_id": "eval-attention-doc-001",
+            "page_number": 7,
+            "chunk_id": "eval-attention-doc-001_p7_c23",
+            "citation_marker": "[Page 7]",
+            "snippet": "hood of size r in\nthe input sequence centered around the respective output position.",
+            "validated": true,
+            "match_score": 0.0,
+            "warning": null
+          }
+        ]
+      },
+      {
+        "id": "q18",
+        "question": "What was the quarterly revenue of Alphabet Inc in Q4 2023?",
+        "answerable": false,
+        "ground_truth_page": null,
+        "retrieved_pages": [
+          15,
+          14,
+          1,
+          12,
+          7
+        ],
+        "is_hit": false,
+        "reciprocal_rank": 0.0,
+        "refused": true,
+        "confidence_score": 9.6491,
+        "latency_ms": 3.65,
+        "answer": "I don't know based on the documents available. The provided document sources do not contain sufficient evidence to answer this question.",
+        "citations": []
+      }
+    ]
+  },
+  "hybrid": {
+    "mode": "hybrid",
+    "total_queries": 18,
+    "hit_rate_at_5": 0.9286,
+    "mrr_at_5": 0.7798,
+    "correct_refusal_rate": 0.75,
+    "false_refusal_rate": 0.1429,
+    "citation_precision": 0.5,
+    "total_citations_generated": 14,
+    "avg_latency_ms": 8.64,
+    "queries": [
+      {
+        "id": "q01",
+        "question": "What optimizer was used for training the Transformer, and what were its hyperparameters?",
+        "answerable": true,
+        "ground_truth_page": 7,
+        "retrieved_pages": [
+          7,
+          8,
+          7,
+          10,
+          2
+        ],
+        "is_hit": true,
+        "reciprocal_rank": 1.0,
+        "refused": false,
+        "confidence_score": 0.0318,
+        "latency_ms": 6.28,
+        "answer": "6.2\nModel Variations\n\nTo evaluate the importance of different components of the Transformer, we varied our base model\nin different ways, measuring the change in performance on English-to-German translation on the\n\n5We used values of 2.8, 3.7, 6.0 and 9.5 TFLOPS for K80, K40, M40 and P100, respectively. [Page 8]",
+        "citations": [
+          {
+            "document_id": "eval-attention-doc-001",
+            "page_number": 8,
+            "chunk_id": "eval-attention-doc-001_p8_c30",
+            "citation_marker": "[Page 8]",
+            "snippet": "erations used to train a\nmodel by multiplying the training time, the number of GPUs used, and an estimate of the sustained\nsingle-precision floating-point capacity of each GPU 5.",
+            "validated": true,
+            "match_score": 0.0,
+            "warning": null
+          }
+        ]
+      },
+      {
+        "id": "q02",
+        "question": "How many warmup steps were used in the learning rate schedule during training?",
+        "answerable": true,
+        "ground_truth_page": 7,
+        "retrieved_pages": [
+          7,
+          8,
+          2,
+          13,
+          6
+        ],
+        "is_hit": true,
+        "reciprocal_rank": 1.0,
+        "refused": false,
+        "confidence_score": 0.0311,
+        "latency_ms": 10.25,
+        "answer": "We varied the learning\nrate over the course of training, according to the formula:\n\nlrate = d\u22120.5\n\nmodel \u00b7 min(step_num\u22120.5, step_num \u00b7 warmup_steps\u22121.5)\n(3)\n\nThis corresponds to increasing the learning rate linearly for the first warmup_steps training steps,\nand decreasing it thereafter proportionally to the inverse square root of the step number. [Page 7]",
+        "citations": [
+          {
+            "document_id": "eval-attention-doc-001",
+            "page_number": 7,
+            "chunk_id": "eval-attention-doc-001_p7_c26",
+            "citation_marker": "[Page 7]",
+            "snippet": "batched together by approximate sequence length.",
+            "validated": true,
+            "match_score": 0.0,
+            "warning": null
+          }
+        ]
+      },
+      {
+        "id": "q03",
+        "question": "What BLEU score did the big Transformer model achieve on the English-to-German newstest2014 test?",
+        "answerable": true,
+        "ground_truth_page": 8,
+        "retrieved_pages": [
+          8,
+          10,
+          8,
+          2,
+          9
+        ],
+        "is_hit": true,
+        "reciprocal_rank": 1.0,
+        "refused": false,
+        "confidence_score": 0.0313,
+        "latency_ms": 6.96,
+        "answer": "Table 2: The Transformer achieves better BLEU scores than previous state-of-the-art models on the\nEnglish-to-German and English-to-French newstest2014 tests at a fraction of the training cost. [Page 8]",
+        "citations": [
+          {
+            "document_id": "eval-attention-doc-001",
+            "page_number": 8,
+            "chunk_id": "eval-attention-doc-001_p8_c27",
+            "citation_marker": "[Page 8]",
+            "snippet": "Table 2: The Transformer achieves better BLEU scores than previous state-of-the-art models on the\nEnglish-to-German and English-to-French newstest2014 tests at a fraction of the training cost.",
+            "validated": true,
+            "match_score": 0.0,
+            "warning": null
+          }
+        ]
+      },
+      {
+        "id": "q04",
+        "question": "What hardware was used to train the base model, and how long did each step take?",
+        "answerable": true,
+        "ground_truth_page": 7,
+        "retrieved_pages": [
+          2,
+          9,
+          7,
+          14,
+          8
+        ],
+        "is_hit": true,
+        "reciprocal_rank": 0.3333,
+        "refused": true,
+        "confidence_score": 0.0293,
+        "latency_ms": 9.59,
+        "answer": "I don't know based on the documents available. The provided document sources do not contain sufficient evidence to answer this question.",
+        "citations": []
+      },
+      {
+        "id": "q05",
+        "question": "What BLEU score did the big model achieve on the English-to-French translation task?",
+        "answerable": true,
+        "ground_truth_page": 8,
+        "retrieved_pages": [
+          8,
+          14,
+          2,
+          9,
+          15
+        ],
+        "is_hit": true,
+        "reciprocal_rank": 1.0,
+        "refused": false,
+        "confidence_score": 0.0328,
+        "latency_ms": 9.71,
+        "answer": "On the WMT 2014 English-to-French translation task, our big model achieves a BLEU score of 41.0,\noutperforming all of the previously published single models, at less than 1/4 the training cost of the\nprevious state-of-the-art model. [Page 8]",
+        "citations": [
+          {
+            "document_id": "eval-attention-doc-001",
+            "page_number": 8,
+            "chunk_id": "eval-attention-doc-001_p8_c28",
+            "citation_marker": "[Page 8]",
+            "snippet": "Pdrop = 0.1.",
+            "validated": true,
+            "match_score": 0.0,
+            "warning": null
+          }
+        ]
+      },
+      {
+        "id": "q06",
+        "question": "What value of label smoothing was employed during training?",
+        "answerable": true,
+        "ground_truth_page": 8,
+        "retrieved_pages": [
+          8,
+          1,
+          4,
+          7,
+          10
+        ],
+        "is_hit": true,
+        "reciprocal_rank": 1.0,
+        "refused": true,
+        "confidence_score": 0.0308,
+        "latency_ms": 9.76,
+        "answer": "I don't know based on the documents available. The provided document sources do not contain sufficient evidence to answer this question.",
+        "citations": []
+      },
+      {
+        "id": "q07",
+        "question": "How many parallel attention layers or heads are used in multi-head attention in the base model?",
+        "answerable": true,
+        "ground_truth_page": 5,
+        "retrieved_pages": [
+          8,
+          9,
+          10,
+          6,
+          7
+        ],
+        "is_hit": false,
+        "reciprocal_rank": 0.0,
+        "refused": false,
+        "confidence_score": 0.0304,
+        "latency_ms": 9.93,
+        "answer": "7\nConclusion\n\nIn this work, we presented the Transformer, the first sequence transduction model based entirely on\nattention, replacing the recurrent layers most commonly used in encoder-decoder architectures with\nmulti-headed self-attention. [Page 10]",
+        "citations": [
+          {
+            "document_id": "eval-attention-doc-001",
+            "page_number": 10,
+            "chunk_id": "eval-attention-doc-001_p10_c36",
+            "citation_marker": "[Page 10]",
+            "snippet": "ite the lack of task-specific tuning our model performs sur-\nprisingly well, yielding better results than all previously reported models with the exception of the\nRecurrent Neural Network Grammar [8].",
+            "validated": true,
+            "match_score": 0.0,
+            "warning": null
+          }
+        ]
+      },
+      {
+        "id": "q08",
+        "question": "What is the dimension d_model of the positional encodings and embeddings?",
+        "answerable": true,
+        "ground_truth_page": 6,
+        "retrieved_pages": [
+          6,
+          9,
+          5,
+          6,
+          2
+        ],
+        "is_hit": true,
+        "reciprocal_rank": 1.0,
+        "refused": false,
+        "confidence_score": 0.0328,
+        "latency_ms": 8.47,
+        "answer": "To this end, we add \"positional encodings\" to the input embeddings at the\nbottoms of the encoder and decoder stacks. [Page 6]",
+        "citations": [
+          {
+            "document_id": "eval-attention-doc-001",
+            "page_number": 6,
+            "chunk_id": "eval-attention-doc-001_p6_c18",
+            "citation_marker": "[Page 6]",
+            "snippet": "Table 1: Maximum path lengths, per-layer complexity and minimum number of sequential operations\nfor different layer types.",
+            "validated": true,
+            "match_score": 0.0,
+            "warning": null
+          }
+        ]
+      },
+      {
+        "id": "q09",
+        "question": "What mathematical functions are used for the sinusoidal positional encoding?",
+        "answerable": true,
+        "ground_truth_page": 6,
+        "retrieved_pages": [
+          6,
+          15,
+          9,
+          4,
+          9
+        ],
+        "is_hit": true,
+        "reciprocal_rank": 1.0,
+        "refused": false,
+        "confidence_score": 0.0315,
+        "latency_ms": 9.63,
+        "answer": "In row (E) we replace our\nsinusoidal positional encoding with learned positional embeddings [Page 9], and observe nearly identical\nresults to the base model. [Page 9]",
+        "citations": [
+          {
+            "document_id": "eval-attention-doc-001",
+            "page_number": 9,
+            "chunk_id": "eval-attention-doc-001_p9_c33",
+            "citation_marker": "[Page 9]",
+            "snippet": "In row (E) we replace our\nsinusoidal positional encoding with learned positional embeddings [9], and observe nearly identical\nresults to the base model.",
+            "validated": true,
+            "match_score": 1.0,
+            "warning": null
+          }
+        ]
+      },
+      {
+        "id": "q10",
+        "question": "What residual dropout rate was used during training for the base model?",
+        "answerable": true,
+        "ground_truth_page": 8,
+        "retrieved_pages": [
+          8,
+          3,
+          1,
+          7,
+          10
+        ],
+        "is_hit": true,
+        "reciprocal_rank": 1.0,
+        "refused": false,
+        "confidence_score": 0.0308,
+        "latency_ms": 9.95,
+        "answer": "The Transformer (big) model trained for English-to-French used\ndropout rate Pdrop = 0.1, instead of 0.3. [Page 8]",
+        "citations": [
+          {
+            "document_id": "eval-attention-doc-001",
+            "page_number": 8,
+            "chunk_id": "eval-attention-doc-001_p8_c29",
+            "citation_marker": "[Page 8]",
+            "snippet": "ished single models, at less than 1/4 the training cost of the\nprevious state-of-the-art model.",
+            "validated": true,
+            "match_score": 0.0,
+            "warning": null
+          }
+        ]
+      },
+      {
+        "id": "q11",
+        "question": "How many encoder and decoder layers N are stacked in the Transformer architecture?",
+        "answerable": true,
+        "ground_truth_page": 3,
+        "retrieved_pages": [
+          3,
+          5,
+          6,
+          2,
+          8
+        ],
+        "is_hit": true,
+        "reciprocal_rank": 1.0,
+        "refused": false,
+        "confidence_score": 0.0325,
+        "latency_ms": 7.26,
+        "answer": "3.3\nPosition-wise Feed-Forward Networks\n\nIn addition to attention sub-layers, each of the layers in our encoder and decoder contains a fully\nconnected feed-forward network, which is applied to each position separately and identically. [Page 5]",
+        "citations": [
+          {
+            "document_id": "eval-attention-doc-001",
+            "page_number": 5,
+            "chunk_id": "eval-attention-doc-001_p5_c16",
+            "citation_marker": "[Page 5]",
+            "snippet": "lues\nand queries come from the same place, in this case, the output of the previous layer in the\nencoder.",
+            "validated": true,
+            "match_score": 0.0,
+            "warning": null
+          }
+        ]
+      },
+      {
+        "id": "q12",
+        "question": "What are the two sub-layers in each encoder layer?",
+        "answerable": true,
+        "ground_truth_page": 3,
+        "retrieved_pages": [
+          6,
+          7,
+          5,
+          3,
+          2
+        ],
+        "is_hit": true,
+        "reciprocal_rank": 0.25,
+        "refused": false,
+        "confidence_score": 0.0304,
+        "latency_ms": 10.52,
+        "answer": "We employ a residual connection  around each of\nthe two sub-layers, followed by layer normalization [Page 6]. [Page 3]",
+        "citations": [
+          {
+            "document_id": "eval-attention-doc-001",
+            "page_number": 6,
+            "chunk_id": "eval-attention-doc-001_p6_c21",
+            "citation_marker": "[Page 6]",
+            "snippet": "Hence we also compare\nthe maximum path length between any two input and output positions in networks composed of the\ndifferent layer types.",
+            "validated": true,
+            "match_score": 0.3333,
+            "warning": null
+          },
+          {
+            "document_id": "eval-attention-doc-001",
+            "page_number": 3,
+            "chunk_id": "eval-attention-doc-001_p3_c9",
+            "citation_marker": "[Page 3]",
+            "snippet": "Figure 1: The Transformer - model architecture.",
+            "validated": true,
+            "match_score": 0.0,
+            "warning": null
+          }
+        ]
+      },
+      {
+        "id": "q13",
+        "question": "What does the decoder stack insert between its two sub-layers?",
+        "answerable": true,
+        "ground_truth_page": 3,
+        "retrieved_pages": [
+          3,
+          15,
+          6,
+          2,
+          1
+        ],
+        "is_hit": true,
+        "reciprocal_rank": 1.0,
+        "refused": false,
+        "confidence_score": 0.032,
+        "latency_ms": 7.87,
+        "answer": "3.1\nEncoder and Decoder Stacks\n\nEncoder:\nThe encoder is composed of a stack of N = 6 identical layers. [Page 3]",
+        "citations": [
+          {
+            "document_id": "eval-attention-doc-001",
+            "page_number": 3,
+            "chunk_id": "eval-attention-doc-001_p3_c9",
+            "citation_marker": "[Page 3]",
+            "snippet": "Figure 1: The Transformer - model architecture.",
+            "validated": true,
+            "match_score": 0.0,
+            "warning": null
+          }
+        ]
+      },
+      {
+        "id": "q14",
+        "question": "What is the inner-layer dimensionality d_ff of the feed-forward network in the base model?",
+        "answerable": true,
+        "ground_truth_page": 5,
+        "retrieved_pages": [
+          14,
+          15,
+          5,
+          4,
+          8
+        ],
+        "is_hit": true,
+        "reciprocal_rank": 0.3333,
+        "refused": false,
+        "confidence_score": 0.0323,
+        "latency_ms": 9.21,
+        "answer": "Additive attention computes the compatibility function using a feed-forward network with\na single hidden layer. [Page 4]",
+        "citations": [
+          {
+            "document_id": "eval-attention-doc-001",
+            "page_number": 4,
+            "chunk_id": "eval-attention-doc-001_p4_c12",
+            "citation_marker": "[Page 4]",
+            "snippet": "multaneously, packed together\ninto a matrix Q.",
+            "validated": true,
+            "match_score": 0.0,
+            "warning": null
+          }
+        ]
+      },
+      {
+        "id": "q15",
+        "question": "What was the total dollar training cost of GPT-4 in cloud compute?",
+        "answerable": false,
+        "ground_truth_page": null,
+        "retrieved_pages": [
+          15,
+          14,
+          5,
+          5,
+          8
+        ],
+        "is_hit": false,
+        "reciprocal_rank": 0.0,
+        "refused": true,
+        "confidence_score": 0.0323,
+        "latency_ms": 9.12,
+        "answer": "I don't know based on the documents available. The provided document sources do not contain sufficient evidence to answer this question.",
+        "citations": []
+      },
+      {
+        "id": "q16",
+        "question": "What is the recommended adult dosage of ibuprofen for acute pain relief?",
+        "answerable": false,
+        "ground_truth_page": null,
+        "retrieved_pages": [
+          9,
+          8,
+          3,
+          2,
+          13
+        ],
+        "is_hit": false,
+        "reciprocal_rank": 0.0,
+        "refused": true,
+        "confidence_score": 0.0294,
+        "latency_ms": 8.08,
+        "answer": "I don't know based on the documents available. The provided document sources do not contain sufficient evidence to answer this question.",
+        "citations": []
+      },
+      {
+        "id": "q17",
+        "question": "How does the Transformer implement convolutional kernels of size k=7?",
+        "answerable": false,
+        "ground_truth_page": null,
+        "retrieved_pages": [
+          7,
+          5,
+          2,
+          6,
+          5
+        ],
+        "is_hit": false,
+        "reciprocal_rank": 0.0,
+        "refused": false,
+        "confidence_score": 0.0323,
+        "latency_ms": 6.6,
+        "answer": "Doing so requires a stack of O(n/k) convolutional layers in the case of contiguous kernels,\nor O(logk(n)) in the case of dilated convolutions , increasing the length of the longest paths\nbetween any two positions in the network. [Page 7]",
+        "citations": [
+          {
+            "document_id": "eval-attention-doc-001",
+            "page_number": 7,
+            "chunk_id": "eval-attention-doc-001_p7_c23",
+            "citation_marker": "[Page 7]",
+            "snippet": "hood of size r in\nthe input sequence centered around the respective output position.",
+            "validated": true,
+            "match_score": 0.0,
+            "warning": null
+          }
+        ]
+      },
+      {
+        "id": "q18",
+        "question": "What was the quarterly revenue of Alphabet Inc in Q4 2023?",
+        "answerable": false,
+        "ground_truth_page": null,
+        "retrieved_pages": [
+          1,
+          14,
+          15,
+          7,
+          12
+        ],
+        "is_hit": false,
+        "reciprocal_rank": 0.0,
+        "refused": true,
+        "confidence_score": 0.0317,
+        "latency_ms": 6.29,
+        "answer": "I don't know based on the documents available. The provided document sources do not contain sufficient evidence to answer this question.",
+        "citations": []
+      }
+    ]
+  },
+  "hybrid_rerank": {
+    "mode": "hybrid_rerank",
+    "total_queries": 18,
+    "hit_rate_at_5": 1.0,
+    "mrr_at_5": 1.0,
+    "correct_refusal_rate": 0.75,
+    "false_refusal_rate": 0.0,
+    "citation_precision": 0.6,
+    "total_citations_generated": 15,
+    "avg_latency_ms": 9.32,
+    "queries": [
+      {
+        "id": "q01",
+        "question": "What optimizer was used for training the Transformer, and what were its hyperparameters?",
+        "answerable": true,
+        "ground_truth_page": 7,
+        "retrieved_pages": [
+          7,
+          8,
+          8,
+          7,
+          1
+        ],
+        "is_hit": true,
+        "reciprocal_rank": 1.0,
+        "refused": false,
+        "confidence_score": 2.5,
+        "latency_ms": 11.99,
+        "answer": "6.2\nModel Variations\n\nTo evaluate the importance of different components of the Transformer, we varied our base model\nin different ways, measuring the change in performance on English-to-German translation on the\n\n5We used values of 2.8, 3.7, 6.0 and 9.5 TFLOPS for K80, K40, M40 and P100, respectively. [Page 8]",
+        "citations": [
+          {
+            "document_id": "eval-attention-doc-001",
+            "page_number": 8,
+            "chunk_id": "eval-attention-doc-001_p8_c29",
+            "citation_marker": "[Page 8]",
+            "snippet": "ished single models, at less than 1/4 the training cost of the\nprevious state-of-the-art model.",
+            "validated": true,
+            "match_score": 0.0,
+            "warning": null
+          }
+        ]
+      },
+      {
+        "id": "q02",
+        "question": "How many warmup steps were used in the learning rate schedule during training?",
+        "answerable": true,
+        "ground_truth_page": 7,
+        "retrieved_pages": [
+          7,
+          8,
+          8,
+          8,
+          7
+        ],
+        "is_hit": true,
+        "reciprocal_rank": 1.0,
+        "refused": false,
+        "confidence_score": 1.9231,
+        "latency_ms": 9.02,
+        "answer": "We varied the learning\nrate over the course of training, according to the formula:\n\nlrate = d\u22120.5\n\nmodel \u00b7 min(step_num\u22120.5, step_num \u00b7 warmup_steps\u22121.5)\n(3)\n\nThis corresponds to increasing the learning rate linearly for the first warmup_steps training steps,\nand decreasing it thereafter proportionally to the inverse square root of the step number. [Page 7]",
+        "citations": [
+          {
+            "document_id": "eval-attention-doc-001",
+            "page_number": 7,
+            "chunk_id": "eval-attention-doc-001_p7_c26",
+            "citation_marker": "[Page 7]",
+            "snippet": "batched together by approximate sequence length.",
+            "validated": true,
+            "match_score": 0.0,
+            "warning": null
+          }
+        ]
+      },
+      {
+        "id": "q03",
+        "question": "What BLEU score did the big Transformer model achieve on the English-to-German newstest2014 test?",
+        "answerable": true,
+        "ground_truth_page": 8,
+        "retrieved_pages": [
+          8,
+          8,
+          9,
+          1,
+          10
+        ],
+        "is_hit": true,
+        "reciprocal_rank": 1.0,
+        "refused": false,
+        "confidence_score": 2.3333,
+        "latency_ms": 9.71,
+        "answer": "6\nResults\n\n6.1\nMachine Translation\n\nOn the WMT 2014 English-to-German translation task, the big transformer model (Transformer (big)\nin Table 2) outperforms the best previously reported models (including ensembles) by more than 2.0\nBLEU, establishing a new state-of-the-art BLEU score of 28.4. [Page 8]",
+        "citations": [
+          {
+            "document_id": "eval-attention-doc-001",
+            "page_number": 8,
+            "chunk_id": "eval-attention-doc-001_p8_c27",
+            "citation_marker": "[Page 8]",
+            "snippet": "Table 2: The Transformer achieves better BLEU scores than previous state-of-the-art models on the\nEnglish-to-German and English-to-French newstest2014 tests at a fraction of the training cost.",
+            "validated": true,
+            "match_score": 0.0,
+            "warning": null
+          }
+        ]
+      },
+      {
+        "id": "q04",
+        "question": "What hardware was used to train the base model, and how long did each step take?",
+        "answerable": true,
+        "ground_truth_page": 7,
+        "retrieved_pages": [
+          7,
+          8,
+          8,
+          9,
+          2
+        ],
+        "is_hit": true,
+        "reciprocal_rank": 1.0,
+        "refused": false,
+        "confidence_score": 1.25,
+        "latency_ms": 9.92,
+        "answer": "erations used to train a\nmodel by multiplying the training time, the number of GPUs used, and an estimate of the sustained\nsingle-precision floating-point capacity of each GPU 5. [Page 8]",
+        "citations": [
+          {
+            "document_id": "eval-attention-doc-001",
+            "page_number": 8,
+            "chunk_id": "eval-attention-doc-001_p8_c30",
+            "citation_marker": "[Page 8]",
+            "snippet": "erations used to train a\nmodel by multiplying the training time, the number of GPUs used, and an estimate of the sustained\nsingle-precision floating-point capacity of each GPU 5.",
+            "validated": true,
+            "match_score": 0.0,
+            "warning": null
+          }
+        ]
+      },
+      {
+        "id": "q05",
+        "question": "What BLEU score did the big model achieve on the English-to-French translation task?",
+        "answerable": true,
+        "ground_truth_page": 8,
+        "retrieved_pages": [
+          8,
+          1,
+          8,
+          10,
+          10
+        ],
+        "is_hit": true,
+        "reciprocal_rank": 1.0,
+        "refused": false,
+        "confidence_score": 2.8571,
+        "latency_ms": 11.72,
+        "answer": "On the WMT 2014 English-to-French translation task, our big model achieves a BLEU score of 41.0,\noutperforming all of the previously published single models, at less than 1/4 the training cost of the\nprevious state-of-the-art model. [Page 8]",
+        "citations": [
+          {
+            "document_id": "eval-attention-doc-001",
+            "page_number": 8,
+            "chunk_id": "eval-attention-doc-001_p8_c28",
+            "citation_marker": "[Page 8]",
+            "snippet": "Pdrop = 0.1.",
+            "validated": true,
+            "match_score": 0.0,
+            "warning": null
+          }
+        ]
+      },
+      {
+        "id": "q06",
+        "question": "What value of label smoothing was employed during training?",
+        "answerable": true,
+        "ground_truth_page": 8,
+        "retrieved_pages": [
+          8,
+          8,
+          7,
+          8,
+          1
+        ],
+        "is_hit": true,
+        "reciprocal_rank": 1.0,
+        "refused": false,
+        "confidence_score": 2.7778,
+        "latency_ms": 9.01,
+        "answer": "Label Smoothing\nDuring training, we employed label smoothing of value \u03f5ls = 0.1 . [Page 8]",
+        "citations": [
+          {
+            "document_id": "eval-attention-doc-001",
+            "page_number": 8,
+            "chunk_id": "eval-attention-doc-001_p8_c28",
+            "citation_marker": "[Page 8]",
+            "snippet": "Pdrop = 0.1.",
+            "validated": true,
+            "match_score": 0.0,
+            "warning": null
+          }
+        ]
+      },
+      {
+        "id": "q07",
+        "question": "How many parallel attention layers or heads are used in multi-head attention in the base model?",
+        "answerable": true,
+        "ground_truth_page": 5,
+        "retrieved_pages": [
+          5,
+          9,
+          10,
+          4,
+          6
+        ],
+        "is_hit": true,
+        "reciprocal_rank": 1.0,
+        "refused": false,
+        "confidence_score": 2.3333,
+        "latency_ms": 8.63,
+        "answer": "7\nConclusion\n\nIn this work, we presented the Transformer, the first sequence transduction model based entirely on\nattention, replacing the recurrent layers most commonly used in encoder-decoder architectures with\nmulti-headed self-attention. [Page 10]",
+        "citations": [
+          {
+            "document_id": "eval-attention-doc-001",
+            "page_number": 10,
+            "chunk_id": "eval-attention-doc-001_p10_c36",
+            "citation_marker": "[Page 10]",
+            "snippet": "ite the lack of task-specific tuning our model performs sur-\nprisingly well, yielding better results than all previously reported models with the exception of the\nRecurrent Neural Network Grammar [8].",
+            "validated": true,
+            "match_score": 0.0,
+            "warning": null
+          }
+        ]
+      },
+      {
+        "id": "q08",
+        "question": "What is the dimension d_model of the positional encodings and embeddings?",
+        "answerable": true,
+        "ground_truth_page": 6,
+        "retrieved_pages": [
+          6,
+          6,
+          8,
+          9,
+          5
+        ],
+        "is_hit": true,
+        "reciprocal_rank": 1.0,
+        "refused": false,
+        "confidence_score": 3.0,
+        "latency_ms": 7.55,
+        "answer": "To this end, we add \"positional encodings\" to the input embeddings at the\nbottoms of the encoder and decoder stacks. [Page 6]",
+        "citations": [
+          {
+            "document_id": "eval-attention-doc-001",
+            "page_number": 6,
+            "chunk_id": "eval-attention-doc-001_p6_c18",
+            "citation_marker": "[Page 6]",
+            "snippet": "Table 1: Maximum path lengths, per-layer complexity and minimum number of sequential operations\nfor different layer types.",
+            "validated": true,
+            "match_score": 0.0,
+            "warning": null
+          }
+        ]
+      },
+      {
+        "id": "q09",
+        "question": "What mathematical functions are used for the sinusoidal positional encoding?",
+        "answerable": true,
+        "ground_truth_page": 6,
+        "retrieved_pages": [
+          6,
+          9,
+          6,
+          9,
+          4
+        ],
+        "is_hit": true,
+        "reciprocal_rank": 1.0,
+        "refused": false,
+        "confidence_score": 2.0,
+        "latency_ms": 8.37,
+        "answer": "In row (E) we replace our\nsinusoidal positional encoding with learned positional embeddings [Page 9], and observe nearly identical\nresults to the base model. [Page 9]",
+        "citations": [
+          {
+            "document_id": "eval-attention-doc-001",
+            "page_number": 9,
+            "chunk_id": "eval-attention-doc-001_p9_c33",
+            "citation_marker": "[Page 9]",
+            "snippet": "In row (E) we replace our\nsinusoidal positional encoding with learned positional embeddings [9], and observe nearly identical\nresults to the base model.",
+            "validated": true,
+            "match_score": 1.0,
+            "warning": null
+          }
+        ]
+      },
+      {
+        "id": "q10",
+        "question": "What residual dropout rate was used during training for the base model?",
+        "answerable": true,
+        "ground_truth_page": 8,
+        "retrieved_pages": [
+          8,
+          7,
+          8,
+          8,
+          9
+        ],
+        "is_hit": true,
+        "reciprocal_rank": 1.0,
+        "refused": false,
+        "confidence_score": 2.5,
+        "latency_ms": 9.07,
+        "answer": "The Transformer (big) model trained for English-to-French used\ndropout rate Pdrop = 0.1, instead of 0.3. [Page 8]",
+        "citations": [
+          {
+            "document_id": "eval-attention-doc-001",
+            "page_number": 8,
+            "chunk_id": "eval-attention-doc-001_p8_c29",
+            "citation_marker": "[Page 8]",
+            "snippet": "ished single models, at less than 1/4 the training cost of the\nprevious state-of-the-art model.",
+            "validated": true,
+            "match_score": 0.0,
+            "warning": null
+          }
+        ]
+      },
+      {
+        "id": "q11",
+        "question": "How many encoder and decoder layers N are stacked in the Transformer architecture?",
+        "answerable": true,
+        "ground_truth_page": 3,
+        "retrieved_pages": [
+          3,
+          1,
+          3,
+          6,
+          2
+        ],
+        "is_hit": true,
+        "reciprocal_rank": 1.0,
+        "refused": false,
+        "confidence_score": 2.6923,
+        "latency_ms": 12.22,
+        "answer": "The Transformer follows this overall architecture using stacked self-attention and point-wise, fully\nconnected layers for both the encoder and decoder, shown in the left and right halves of Figure 1,\nrespectively. [Page 3]",
+        "citations": [
+          {
+            "document_id": "eval-attention-doc-001",
+            "page_number": 3,
+            "chunk_id": "eval-attention-doc-001_p3_c9",
+            "citation_marker": "[Page 3]",
+            "snippet": "Figure 1: The Transformer - model architecture.",
+            "validated": true,
+            "match_score": 0.0,
+            "warning": null
+          }
+        ]
+      },
+      {
+        "id": "q12",
+        "question": "What are the two sub-layers in each encoder layer?",
+        "answerable": true,
+        "ground_truth_page": 3,
+        "retrieved_pages": [
+          3,
+          3,
+          5,
+          15,
+          5
+        ],
+        "is_hit": true,
+        "reciprocal_rank": 1.0,
+        "refused": false,
+        "confidence_score": 4.0,
+        "latency_ms": 8.16,
+        "answer": "In addition to the two\nsub-layers in each encoder layer, the decoder inserts a third sub-layer, which performs multi-head\nattention over the output of the encoder stack. [Page 3]",
+        "citations": [
+          {
+            "document_id": "eval-attention-doc-001",
+            "page_number": 3,
+            "chunk_id": "eval-attention-doc-001_p3_c10",
+            "citation_marker": "[Page 3]",
+            "snippet": "is the function implemented by the sub-layer\nitself.",
+            "validated": true,
+            "match_score": 0.0,
+            "warning": null
+          }
+        ]
+      },
+      {
+        "id": "q13",
+        "question": "What does the decoder stack insert between its two sub-layers?",
+        "answerable": true,
+        "ground_truth_page": 3,
+        "retrieved_pages": [
+          3,
+          7,
+          3,
+          5,
+          5
+        ],
+        "is_hit": true,
+        "reciprocal_rank": 1.0,
+        "refused": false,
+        "confidence_score": 0.4545,
+        "latency_ms": 8.2,
+        "answer": "In addition to the two\nsub-layers in each encoder layer, the decoder inserts a third sub-layer, which performs multi-head\nattention over the output of the encoder stack. [Page 3]",
+        "citations": [
+          {
+            "document_id": "eval-attention-doc-001",
+            "page_number": 3,
+            "chunk_id": "eval-attention-doc-001_p3_c9",
+            "citation_marker": "[Page 3]",
+            "snippet": "Figure 1: The Transformer - model architecture.",
+            "validated": true,
+            "match_score": 0.0,
+            "warning": null
+          }
+        ]
+      },
+      {
+        "id": "q14",
+        "question": "What is the inner-layer dimensionality d_ff of the feed-forward network in the base model?",
+        "answerable": true,
+        "ground_truth_page": 5,
+        "retrieved_pages": [
+          5,
+          3,
+          7,
+          5,
+          4
+        ],
+        "is_hit": true,
+        "reciprocal_rank": 1.0,
+        "refused": false,
+        "confidence_score": 2.8571,
+        "latency_ms": 8.15,
+        "answer": "Even with k = n, however, the complexity of a separable\nconvolution is equal to the combination of a self-attention layer and a point-wise feed-forward layer,\nthe approach we take in our model. [Page 7]",
+        "citations": [
+          {
+            "document_id": "eval-attention-doc-001",
+            "page_number": 7,
+            "chunk_id": "eval-attention-doc-001_p7_c23",
+            "citation_marker": "[Page 7]",
+            "snippet": "hood of size r in\nthe input sequence centered around the respective output position.",
+            "validated": true,
+            "match_score": 0.0,
+            "warning": null
+          }
+        ]
+      },
+      {
+        "id": "q15",
+        "question": "What was the total dollar training cost of GPT-4 in cloud compute?",
+        "answerable": false,
+        "ground_truth_page": null,
+        "retrieved_pages": [
+          8,
+          7,
+          2,
+          6,
+          8
+        ],
+        "is_hit": false,
+        "reciprocal_rank": 0.0,
+        "refused": true,
+        "confidence_score": -0.3846,
+        "latency_ms": 9.05,
+        "answer": "I don't know based on the documents available. The provided document sources do not contain sufficient evidence to answer this question.",
+        "citations": []
+      },
+      {
+        "id": "q16",
+        "question": "What is the recommended adult dosage of ibuprofen for acute pain relief?",
+        "answerable": false,
+        "ground_truth_page": null,
+        "retrieved_pages": [
+          14,
+          9,
+          3,
+          2,
+          13
+        ],
+        "is_hit": false,
+        "reciprocal_rank": 0.0,
+        "refused": true,
+        "confidence_score": -0.8333,
+        "latency_ms": 11.57,
+        "answer": "I don't know based on the documents available. The provided document sources do not contain sufficient evidence to answer this question.",
+        "citations": []
+      },
+      {
+        "id": "q17",
+        "question": "How does the Transformer implement convolutional kernels of size k=7?",
+        "answerable": false,
+        "ground_truth_page": null,
+        "retrieved_pages": [
+          7,
+          6,
+          10,
+          5,
+          9
+        ],
+        "is_hit": false,
+        "reciprocal_rank": 0.0,
+        "refused": false,
+        "confidence_score": 1.3636,
+        "latency_ms": 7.82,
+        "answer": "Doing so requires a stack of O(n/k) convolutional layers in the case of contiguous kernels,\nor O(logk(n)) in the case of dilated convolutions , increasing the length of the longest paths\nbetween any two positions in the network. [Page 7]",
+        "citations": [
+          {
+            "document_id": "eval-attention-doc-001",
+            "page_number": 7,
+            "chunk_id": "eval-attention-doc-001_p7_c23",
+            "citation_marker": "[Page 7]",
+            "snippet": "hood of size r in\nthe input sequence centered around the respective output position.",
+            "validated": true,
+            "match_score": 0.0,
+            "warning": null
+          }
+        ]
+      },
+      {
+        "id": "q18",
+        "question": "What was the quarterly revenue of Alphabet Inc in Q4 2023?",
+        "answerable": false,
+        "ground_truth_page": null,
+        "retrieved_pages": [
+          1,
+          14,
+          15,
+          12,
+          7
+        ],
+        "is_hit": false,
+        "reciprocal_rank": 0.0,
+        "refused": true,
+        "confidence_score": -1.3636,
+        "latency_ms": 7.64,
+        "answer": "I don't know based on the documents available. The provided document sources do not contain sufficient evidence to answer this question.",
+        "citations": []
+      }
+    ]
+  }
+}
