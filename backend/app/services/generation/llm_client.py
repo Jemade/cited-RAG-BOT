@@ -26,6 +26,12 @@ class LLMClient:
             else:
                 self.provider = "mock"
 
+        # Ensure correct default models per provider
+        if self.provider == "gemini" and (self.model == "gpt-4o-mini" or not self.model):
+            self.model = "gemini-3.6-flash"
+        elif self.provider == "groq" and (self.model == "gpt-4o-mini" or not self.model):
+            self.model = "llama-3.1-8b-instant"
+
         logger.info(f"Initialized LLMClient with provider='{self.provider}', model='{self.model}'")
 
     async def generate_answer(
