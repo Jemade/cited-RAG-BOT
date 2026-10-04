@@ -43,3 +43,7 @@ htmlcov/
 # OS
 .DS_Store
 Thumbs.db
+
+# Local runtime and private configuration
+.mypy_cache/
+.ruff_cache/

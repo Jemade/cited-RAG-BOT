@@ -60,3 +60,9 @@ The `evaluation/` directory contains benchmark tooling. See [architecture](docs/
 ## Current scope
 
 The mock generation path is an offline demonstration, not a live model evaluation. Citation checks and confidence thresholds reduce unsupported answers but do not guarantee factual correctness. Scanned PDFs require text extraction support beyond ordinary embedded PDF text.
+
+## Engineering and contribution guide
+
+Read the [engineering notes](docs/ENGINEERING.md) for implementation boundaries and verification commands, the [review checklist](docs/REVIEW_CHECKLIST.md) for evidence still required, and [CONTRIBUTING.md](CONTRIBUTING.md) to propose changes. Report vulnerabilities through [SECURITY.md](SECURITY.md).
+
+[![Repository hygiene](https://github.com/Jemade/cited-RAG-BOT/actions/workflows/repository-hygiene.yml/badge.svg)](https://github.com/Jemade/cited-RAG-BOT/actions/workflows/repository-hygiene.yml)
