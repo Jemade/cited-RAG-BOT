@@ -9,10 +9,13 @@ from app.db.session import init_db
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     logger.info(f"Starting {settings.PROJECT_NAME} v{settings.VERSION}...")
+    # Refuse to accept traffic when persistent storage is unavailable.
+    # Silently continuing would produce a running API with failing document routes.
     try:
         init_db()
-    except Exception as e:
-        logger.error(f"Failed to initialize database on startup: {e}")
+    except Exception:
+        logger.exception("Database initialization failed; aborting startup")
+        raise
     yield
     logger.info("Shutting down CiteRAG...")
 
